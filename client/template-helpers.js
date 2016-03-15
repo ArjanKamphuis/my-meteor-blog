@@ -1,4 +1,5 @@
 Template.registerHelper('formatTime', function(time, type) {
+    timer.tick();
     switch(type) {
         case 'fromNow':
             return moment.unix(time).fromNow();
