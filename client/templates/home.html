@@ -1,9 +1,9 @@
 <template name="home">
-{{#markdown}}
+    {{#markdown}}
 ## Welcome to my Blog
 Here I'm talking about my latest discoveries from the world of JavaScript.
-{{/markdown}}
-
+    {{/markdown}}
+    <h2>This comes from our Session: <strong>{{sessionExample}}</strong></h2>
     {{#each postsList}}
         {{> postInList}}
     {{/each}}
